@@ -6,64 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
     <title>My Portofolio</title>
-    <style>
-        .logo-profile {
-            padding-top: 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
 </head>
 
 <body>
-    <header style="background-color: #8b6e4a;">
-        <img class="logo-profile" src="img/rey.jpeg" alt="reitama" style="border-radius: 900%; margin: 0 auto;" height="250" width="250">
-        <h1 style="text-align: center; padding-bottom: 30px;">Reitamaditya Hadyan Wijaya</h1>
+    <div class="topnav">
+        <a href="#">Home</a>
+    </div>
+    <header>
+        <img class="logo-profile" src="img/rey.jpeg" alt="reitama">
+        <h1 class="nama-profile">Reitamaditya Hadyan Wijaya</h1>
     </header>
-    <main style="background-color: #bfb9b4;">
-        <h1>About Me</h1>
-        <p style="font-size: 120%; text-align: justify;">Perkenalkan nama saya Reitamaditya Hadyan Wijaya, biasa dipanggil Reitama,
-            saat ini saya seorang mahasiswa Ilmu Komputer dari Universitas Pertamina,
-            saya sangat berantusias dengan Front-end dan Back-end.</p>
-    <section style="background-color: #bfb9b4;">
-        <h2>Biodata Diri</h2>
-        <table>
-            <tr>
-                <td>Nama</td>
-                <td>Reitamaditya</td>
-            </tr>
-            <tr>
-                <td>Kelahiran</td>
-                <td>15/10/2002</td>
-            </tr>
-            <tr>
-                <td>Hobi</td>
-                <td>Bermain</td>
-            </tr>
-        </table>
-        <h1>Hubungi Saya</h1>
-        <table>
-            <tr>
-                <td><img class="logo-wa" src="img/logo_telp.png" alt="telpon" width="30px" height="30px"></td>
-                <td>081293273799</td>
-            </tr>
-            <tr>
-                <td><img src="img/logo_dc.png" alt="discord" width="30px" height="30px"></td>
-                <td>Arthurr#0252</td>
-            </tr>
-            <tr>
-                <td><img src="img/logo_github.png" alt="github" width="30px" height="30px"></td>
-                <td>github.com/reiitama</td>
-            </tr>
-        </table>
-    </section>
-</main>
-    <footer style="text-align: center;">
-        <p> Pemrograman Web Copyright © 
-        <script> document.write(new Date().getFullYear())</script>
-        Reitama</p>
+    <main class="card-main" style="width: 55%; margin-top: 0;">
+        <div>
+            <h1>About Me</h1>
+            <p id="par">Perkenalkan nama saya Reitamaditya Hadyan Wijaya, biasa
+                dipanggil Reitama,
+                saat ini saya seorang mahasiswa Ilmu Komputer dari Universitas Pertamina,
+                saya sangat berantusias dengan Front-end dan Back-end.</p>
+            <section>
+                <h2>Biodata Diri</h2>
+                <table>
+                    <tr>
+                        <td>Nama</td>   
+                        <td>Reitamaditya</td>
+                    </tr>
+                    <tr>
+                        <td>Kelahiran</td>
+                        <td>15/10/2002</td>
+                    </tr>
+                    <tr>
+                        <td>Hobi</td>
+                        <td>Bermain</td>
+                    </tr>
+                </table>
+                <h1>Hubungi Saya</h1>
+                <table>
+                    <tr>
+                        <td><img class="logo-wa" src="img/logo_telp.png" alt="telpon" width="30px" height="30px"></td>
+                        <td>081293273799</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/logo_dc.png" alt="discord" width="30px" height="30px"></td>
+                        <td>Arthurr#0252</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/logo_github.png" alt="github" width="30px" height="30px"></td>
+                        <td>github.com/reiitama</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <div class="card">
+            <img src="img/rey.jpeg" alt="Rey" style="width: 100%;">
+            <div class="container">
+                <h4><b>Reitamaditya</b></h4>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> Pemrograman Web Copyright ©
+            <script> document.write(new Date().getFullYear())</script>
+            Reitama
+        </p>
     </footer>
 </body>
 
