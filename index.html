@@ -5,73 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/icon" href="img/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portofolio</title>
+    <link rel="icon" type="image/icon" href="../img/logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" media="screen and (max-width: 768px)" />
+    <title>Portofolio</title>
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="#">Home</a>
-    </div>
-    <header>
-        <img class="logo-profile" src="img/rey.jpeg" alt="reitama">
-        <h1 class="nama-profile">Reitamaditya Hadyan Wijaya</h1>
-    </header>
-    <main class="card-main" style="width: 55%; margin-top: 0;">
-        <div>
-            <h1>About Me</h1>
-            <p id="par">Perkenalkan nama saya Reitamaditya Hadyan Wijaya, biasa
-                dipanggil Reitama,
-                saat ini saya seorang mahasiswa Ilmu Komputer dari Universitas Pertamina,
-                saya sangat berantusias dengan Front-end dan Back-end.</p>
-            <section>
-                <h2>Biodata Diri</h2>
-                <table>
-                    <tr>
-                        <td>Nama</td>   
-                        <td>Reitamaditya</td>
-                    </tr>
-                    <tr>
-                        <td>Kelahiran</td>
-                        <td>15/10/2002</td>
-                    </tr>
-                    <tr>
-                        <td>Hobi</td>
-                        <td>Bermain</td>
-                    </tr>
-                </table>
-                <h1>Hubungi Saya</h1>
-                <table>
-                    <tr>
-                        <td><img class="logo-wa" src="img/logo_telp.png" alt="telpon" width="30px" height="30px"></td>
-                        <td>081293273799</td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/logo_dc.png" alt="discord" width="30px" height="30px"></td>
-                        <td>Arthurr#0252</td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/logo_github.png" alt="github" width="30px" height="30px"></td>
-                        <td>github.com/reiitama</td>
-                    </tr>
-                </table>
-            </section>
-        </div>
-        <div class="card">
-            <img src="img/rey.jpeg" alt="Rey" style="width: 100%;">
-            <div class="container">
-                <h4><b>Reitamaditya</b></h4>
-                <p>Software Engineer</p>
+    <div class="container">
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Portofolio</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social">Social Media</a></li>
+                </ul>
+                <a href="#" class="btn">Welcome</a>
+            </nav>
+            <div class="content">
+                <h4 style="color: white;">Hello!, <span>my name is</span></h4>
+                <h1><span>Reitamaditya </span>Hadyan Wijaya</h1>
+                <h3>I'm a Web <span>Developer</span>!</h3>
+                <div class="newslatter">
+                    <form>
+                        <input type="email" name="email" id="mail" placeholder="Email">
+                        <input type="submit" name="submit" value="Start!">
+                    </form>
+                </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <p> Pemrograman Web Copyright ©
-            <script> document.write(new Date().getFullYear())</script>
-            Reitama
-        </p>
-    </footer>
+        <section class="about">
+            <div class="main" id="aboutme">
+                <img src="../img/rey.jpeg" alt="profile">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>Web <span>Developer</span></h5>
+                    <p style="text-align: justify;">Saya seorang mahasiswa yang sedang berkuliah di Universitas
+                        Pertamina
+                        di Program Studi Ilmu Komputer,<span> saya sangat berantusias
+                            dalam bidang Front-end Web Developer, </span>saya juga dapat membuat
+                        sebuah website menjadi lebih fleksibel dan menarik.
+                    </p>
+                    <a href="https://wa.me/6281293273799" target="_blank">
+                        <button type="button">
+                            Let's talk with me!</button></a>
+                </div>
+            </div>
+        </section>
+        <div class="skills" id="skill">
+            <div class="title">
+                <h2>Skills</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>Web Development</h5>
+                    <div class="pra">
+                        <p>Setiap website harus dibangun dengan dua tujuan utama.
+                            yang pertama adalah harus berfungsi di semua perangkat.
+                            dan yang kedua adalah harus secepat mungkin.
+                        </p>
+                    </div>
+                    <p style="text-align: center;">
+                        <!-- <a href="#" class="button">Read More</a> -->
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h5>HTML</h5>
+                    <div class="pra">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.
+                        </p>
+                    </div>
+                    <p style="text-align: center;">
+                        <!-- <a href="#" class="button">Read More</a> -->
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-php"></i>
+                    <h5>PHP</h5>
+                    <div class="pra">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.
+                        </p>
+                    </div>
+                    <p style="text-align: center;">
+                        <!-- <a href="#" class="button">Read More</a> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-me" id="contact">
+            <p>Contact Me</p>
+            <a href="https://wa.me/6281293273799?text=Hai, Apa anda memiliki waktu?" target="_blank"
+                class="button-two"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <br>
+            <a href="#" class="button-two"><i class="fa-brands fa-telegram"></i> Telegram</a>
+        </div>
+        <footer>
+            <p>Social Media</p>
+            <div class="social" id="social">
+                <a href="https://www.facebook.com/reitama.hw/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/reiitama/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/reitama15/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://line.me/ti/p/~zhawkeye" target="_blank">
+                    <i class="fa-brands fa-line"></i>
+                </a>
+                <a href="https://www.tiktok.com/@reitamaaa/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+            <p class="end">Copyright ©
+                <script> document.write(new Date().getFullYear())</script>
+                by Reitamaditya Hadyan Wijaya
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
